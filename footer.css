@@ -1,0 +1,59 @@
+.tpc-footer {
+  background-color: var(--global-dawn-pink);
+  width: 100%;
+  min-height: 350px;
+  height: 100%;
+}
+
+.tpc-footer-wrapper {
+  height: inherit;
+  min-height: inherit;
+  width: inherit;
+  padding: 48px 88px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-sizing: border-box;
+}
+
+/* FOOTER NAVIGATION */
+
+.tpc-footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.tpc-fn-list, .tpc-footer-social-list {
+  list-style-type: none;
+}
+
+.tpc-fn-list-item a, .tpc-footer-social-list-item a{
+  font-size:16px;
+  font-weight: normal;
+  line-height: 50px;
+  letter-spacing: 0.09em;
+}
+
+
+/* FOOTER FORM */
+
+.tpc-footer-form-headline {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.09em;
+}
+.tpc-footer-form-copy {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.09em;
+}
+
+.tpc-footer-form-wrapper input[name="email"] {
+  width: 100%;
+  background: #FFF;
+  border: 1px solid #000;
+  padding: 16px;
+}

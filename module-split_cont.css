@@ -1,0 +1,50 @@
+/* Module Split Container */
+
+.module-split_cont {
+  min-height: 900px;
+  padding: var(--global-padding);
+  display: grid;
+  grid-template-columns: repeat(var(--cols-split_container), 1fr);
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.split-img_cont img {
+  width: 100%;
+  height: 900px;
+  object-fit: cover;
+}
+
+/* Split Container Copy */
+
+.split-copy-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.split-copy-wrapper h2 {
+  text-transform: capitalize;
+  font-family: 'Spline Sans', sans-serif;
+  font-size: 3.125rem;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.09em;
+  font-weight: 600;
+}
+
+.split-copy-cta {
+  text-transform: uppercase;
+  font-family: 'Spline Sans', sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+  letter-spacing: 0.09em;
+  font-style: normal;
+  font-weight: 600;
+  padding: 24px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
