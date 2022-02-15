@@ -33,6 +33,7 @@
   height: 20px;
   position: relative;
   display: none;
+  flex: 1;
   align-items: center;
   cursor: pointer;
 }
@@ -40,7 +41,7 @@
 .tpc-hamburger-btn,
 .tpc-hamburger-btn::after,
 .tpc-hamburger-btn::before {
-  width: 100%;
+  width: 25px;
   height: 2px;
   background-color: var(--global-grey);
   transition: 0.15s ease-in-out;
@@ -102,12 +103,6 @@ body.ham-open .tpc-hamburger-btn::after {
   flex: 1;
   justify-content: flex-end;
 }
-
-
-
-
-
-
 
 @media screen and (max-width:768px) {
   .tpc-header {

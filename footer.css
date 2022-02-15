@@ -25,13 +25,21 @@
 
 .tpc-fn-list, .tpc-footer-social-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tpc-fn-list-item,
+.tpc-footer-social-list-item {
+  margin: 20px 0;
 }
 
 .tpc-fn-list-item a, .tpc-footer-social-list-item a{
   font-size:16px;
-  font-weight: normal;
-  line-height: 50px;
   letter-spacing: 0.09em;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 400;
 }
 
 
@@ -47,7 +55,6 @@
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
-  line-height: 18px;
   letter-spacing: 0.09em;
 }
 
@@ -56,4 +63,16 @@
   background: #FFF;
   border: 1px solid #000;
   padding: 16px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width:1024px) {
+  .tpc-footer-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+  }
+
+  .tpc-footer-links {
+    order: 2;
+  }
 }
